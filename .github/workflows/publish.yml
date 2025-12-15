@@ -9,8 +9,8 @@ jobs:
     steps :
     - name: FTP Deploy Action via lftp (FTP, SFTP, FTPS)
       # You may pin to the exact commit or the version.
-      # uses: pontago/lftp-deploy-action@47debd112419af76b6b7c0ee7861dc506a26f01b
-      uses: pontago/lftp-deploy-action@v1.0.1
+      uses: pontago/lftp-deploy-action@47debd112419af76b6b7c0ee7861dc506a26f01b
+      # uses: pontago/lftp-deploy-action@v1.0.1
       with:
         # Sever Hostname or IP
         host: mrck.ftp.infomaniak.com
@@ -25,7 +25,7 @@ jobs:
         port: 21
         # ${{ secrets.Port }}
         # Transfer protocol (ftp, ftps, sftp)
-        protocol: sftp
+        protocol: ftp
         # ${{ secrets.Protocol }}
         # If you want to use SSH Private Key, protocol parameter should be sftp.
         remote_dir: examen130
