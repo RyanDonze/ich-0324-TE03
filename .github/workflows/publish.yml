@@ -23,5 +23,5 @@ jobs:
         # Transfer protocol (ftp, ftps, sftp)
         protocol: ${{ secrets.PROTOCOL }}
         # If you want to use SSH Private Key, protocol parameter should be sftp.
-          
+        remote_dir: examen130
     
