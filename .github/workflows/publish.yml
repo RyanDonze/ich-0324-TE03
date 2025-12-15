@@ -1,0 +1,27 @@
+name: publish
+
+on:
+  workflow_dispatch:
+
+jobs:
+  publish:
+    runs-on: ubuntu-22.04
+    steps :
+    - name: FTP Deploy Action via lftp (FTP, SFTP, FTPS)
+      # You may pin to the exact commit or the version.
+      # uses: pontago/lftp-deploy-action@47debd112419af76b6b7c0ee7861dc506a26f01b
+      uses: pontago/lftp-deploy-action@v1.0.1
+      with:
+        # Sever Hostname or IP
+        host: ${{ secrets.HOST_NAME }}
+        # Login Username
+        username: ${{ secrets.USER_NAME }}
+        # Login Password
+        password: ${{ secrets.PASSWORD }}
+        # Default port are FTP(21), SFTP(22).
+        port: ${{ secrets.PORT }}
+        # Transfer protocol (ftp, ftps, sftp)
+        protocol: ${{ secrets.PROTOCOL }}
+        # If you want to use SSH Private Key, protocol parameter should be sftp.
+          
+    
