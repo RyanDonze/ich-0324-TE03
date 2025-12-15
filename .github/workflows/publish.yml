@@ -13,15 +13,15 @@ jobs:
       uses: pontago/lftp-deploy-action@v1.0.1
       with:
         # Sever Hostname or IP
-        host: ${{ secrets.HOST_NAME }}
+        host: ${{ secrets.HostName }}
         # Login Username
-        username: ${{ secrets.USER_NAME }}
+        username: ${{ secrets.UserName }}
         # Login Password
-        password: ${{ secrets.PASSWORD }}
+        password: ${{ secrets.Password }}
         # Default port are FTP(21), SFTP(22).
-        port: ${{ secrets.PORT }}
+        port: ${{ secrets.Port }}
         # Transfer protocol (ftp, ftps, sftp)
-        protocol: ${{ secrets.PROTOCOL }}
+        protocol: ${{ secrets.Protocol }}
         # If you want to use SSH Private Key, protocol parameter should be sftp.
         remote_dir: examen130
     
