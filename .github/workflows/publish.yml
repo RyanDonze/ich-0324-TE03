@@ -13,15 +13,20 @@ jobs:
       uses: pontago/lftp-deploy-action@v1.0.1
       with:
         # Sever Hostname or IP
-        host: ${{ secrets.HostName }}
+        host: mrck.ftp.infomaniak.com
+        # ${{ secrets.HostName }}
         # Login Username
-        username: ${{ secrets.UserName }}
+        username: mrck_ich-0324-te03
+        # ${{ secrets.UserName }}
         # Login Password
-        password: ${{ secrets.Password }}
+        password: Pbk-GbGPdU2
+        # ${{ secrets.Password }}
         # Default port are FTP(21), SFTP(22).
-        port: ${{ secrets.Port }}
+        port: 21
+        # ${{ secrets.Port }}
         # Transfer protocol (ftp, ftps, sftp)
-        protocol: ${{ secrets.Protocol }}
+        protocol: FTP
+        # ${{ secrets.Protocol }}
         # If you want to use SSH Private Key, protocol parameter should be sftp.
         remote_dir: examen130
     
