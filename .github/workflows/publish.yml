@@ -14,10 +14,14 @@ jobs:
       with:
         server: mrck.ftp.infomaniak.com
         # ${{ secrets.HOST_NAME }}
-        username: ${{ secrets.USER_NAME }}
-        password: ${{ secrets.PASSWORD }}
-        port: ${{ secrets.PORT }}
-        protocol: ${{ secrets.PROTOCOL }}
+        username: mrck_ich-0324-te03
+        # ${{ secrets.USER_NAME }}
+        password: Pbk-GbGPdU2
+        # ${{ secrets.PASSWORD }}
+        port: 21
+        # ${{ secrets.PORT }}
+        protocol: FTP
+        # ${{ secrets.PROTOCOL }}
         server-dir: ich-0324.cidisi.ch/examen130/
         exclude: .git*/**
     
